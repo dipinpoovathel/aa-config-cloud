@@ -7,3 +7,9 @@ baggage:
         enable: true
       resourceserver:
         jwt:
+          authorized-client-ids:
+            - client-id
+          validators:
+            pf-stage:
+              jwk-set-uri: https://mydomain.com/jks
+              issuer-uri: https://mydomain.com
