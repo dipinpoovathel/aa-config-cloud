@@ -1,0 +1,9 @@
+baggage:
+  security:
+    oauth2:
+      unprotected-paths:
+        - /static/*
+      login:
+        enable: true
+      resourceserver:
+        jwt:
