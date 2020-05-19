@@ -8,8 +8,7 @@ baggage:
       resourceserver:
         jwt:
           authorized-client-ids:
-            - client-id
+            - falcon-stage
           validators:
             pf-stage:
-              jwk-set-uri: https://mydomain.com/jks
-              issuer-uri: https://mydomain.com
+              jwk-set-uri: https://idpstage.aa.com/ext/baggage
